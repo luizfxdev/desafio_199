@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operação GeekHunt</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Operação GeekHunt</h1>
+      <p class="subtitle">A Rebelião dos Easter Eggs</p>
+
+      <div class="input-section">
+        <label for="frase">Selecione uma frase icônica:</label>
+        <select id="frase" class="custom-select">
+          <option value="">-- Selecione uma frase --</option>
+          <option value="Vingadores, avante!">Vingadores, avante!</option>
+          <option value="Isso não é uma lua.">Isso não é uma lua.</option>
+          <option value="Bazinga!">Bazinga!</option>
+          <option value="Aqui está olhando para você, garoto.">Aqui está olhando para você, garoto.</option>
+          <option value="Com grandes poderes vêm grandes responsabilidades.">
+            Com grandes poderes vêm grandes responsabilidades.
+          </option>
+          <option value="Que a Força esteja com você.">Que a Força esteja com você.</option>
+          <option value="Por Asgard!">Por Asgard!</option>
+          <option value="Eu sou o seu pai.">Eu sou o seu pai.</option>
+          <option value="Eu sou inevitável.">Eu sou inevitável.</option>
+          <option value="Você não passará!">Você não passará!</option>
+          <option value="Por Gondor!">Por Gondor!</option>
+          <option value="Eu sou o Homem de Ferro.">Eu sou o Homem de Ferro.</option>
+          <option value="A verdade está lá fora.">A verdade está lá fora.</option>
+          <option value="Bem-vindo à Matrix.">Bem-vindo à Matrix.</option>
+          <option value="Vingadores: Ultimato">Vingadores: Ultimato</option>
+        </select>
+      </div>
+
+      <div class="button-group">
+        <button id="revelar" class="btn">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          REVELAR
+        </button>
+
+        <button id="voltar" class="btn">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          VOLTAR
+        </button>
+      </div>
+      <br />
+      <br />
+      <div class="result-section">
+        <div id="resultado" class="result-content">
+          <p>Selecione uma frase e clique em REVELAR para descobrir os Easter Eggs!</p>
+        </div>
+
+        <div id="conquistas" class="achievements"></div>
+      </div>
+    </div>
+
+    <!-- Elementos de áudio -->
+    <audio id="sound1" src="assets/sound1.mp3"></audio>
+    <audio id="sound2" src="assets/sound2.mp3"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
